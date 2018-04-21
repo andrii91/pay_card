@@ -1,0 +1,34 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  //    @import '../mobile';
+  & {
+    .checkout {
+      overflow: hidden;
+    }
+    .checkout-galery {
+      position: relative;
+      transform: none;
+      min-width: inherit;
+      top: 0;
+    }
+    .checkout-galery {
+      max-width: 100%;
+      min-height: inherit;
+    }
+    .order_summary {
+      margin-right: auto;
+    }
+    .form-text {
+      margin: 0 auto;
+    }
+
+  }
+  .form-text:before {
+    left: -50%;
+  }
+  .margin-auto {
+    margin: auto;
+    max-width: 360px;
+  }
+}

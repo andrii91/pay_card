@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta name="Title" content="" />
+  <meta name="description" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:sitename" content="" />
+  <meta property="og:title" content="">
+  <meta property="og:image" content="" />
+  <title></title>
+  <link type="text/css" rel="stylesheet" href="css/app.css" />
+  <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+  <header class="checkout">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="checkout-galery">
+            <div class="galery">
+              <div class="galery-img">
+                <img id="largeImg" src="images/bf.png" alt="Large image">
+                <div class="circle"></div>
+              </div>
+              <div class="first active galery-item">
+                <ul id="thumbs">
+                  <li>
+                    <a href="images/bf.png" title="Image 2"><img src="images/bf.png"></a>
+                  </li>
+                  <li>
+                    <a href="images/67618f_8e0d8f75d9024ffe9177f601e0147a79_mv2.png" title="Image 2"><img src="images/67618f_8e0d8f75d9024ffe9177f601e0147a79_mv2.png"></a>
+                  </li>
+                  <li>
+                    <a href="images/bf.png" title="Image 2"><img src="images/bf.png"></a>
+                  </li>
+                  <li>
+                    <a href="images/bf.png" title="Image 2"><img src="images/bf.png"></a>
+                  </li>
+                </ul>
+                <div class="checkout-info">
+                  <p>Each purchase comes with BitFreezer wallet, encryption guide, detailed instructions and cutting-edge customer support </p>
+                  <p>1 BTC prize if the wallet gets hacked while complying with all the guidelines </p>
+                  <p>Next supported currency is going to be decided by a vote on our webpage</p>
+                </div>
+
+              </div>
+              <div class="galery-item next">
+                <div class="order_summary">
+                  <h4>Order Summary</h4>
+                  <p><b>BitFreezer</b> Qty: <span class="quantity_count">1</span></p>
+                  <p>SKU: <span>860095000909</span></p>
+                  <div class="product-item ">
+                    <div class="row ">
+                      <div class="col-6">
+                        <h5>Subtotal</h5>
+                      </div>
+                      <div class="col-6">
+                        <div class="summ subtotal_summ">49$</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <h5>Delivery price</h5>
+                      </div>
+                      <div class="col-6">
+                        <div class="summ">4$</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="row">
+                      <div class="col-6">
+                        <h5 class="total_cost">Total cost</h5>
+                      </div>
+                      <div class="col-6">
+                        <div class="summ_all">53$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="order" action="#" method="post">
+            <!-- Шаг 1           -->
+            <div class="first order-item active">
+              <div class="margin-auto">
+                <div class="product-name">BitFreezer</div>
+                <div class="product-id">SKU: <span>860095000909</span></div>
+                <div class="product-price">49$</div>
+                <label for="quantity">Quantity
+              <input id="quantity" min="1" type="number" name="quantity" required  value="1">
+            </label>
+                <label for="promocode">Промокод
+              <input id="promocode"  type="text" name="quantity" >
+              <button type="button" class="apply">Применить</button>
+            </label>
+                <div class="product-item subtotal">
+                  <div class="row mb25">
+                    <div class="col-6">
+                      <h5>Subtotal</h5>
+                    </div>
+                    <div class="col-6">
+                      <div class="summ subtotal_summ">49$</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <h5>Delivery price</h5>
+                      <a class="country modal-btn" href="#" data-modal="modal_1">Ukraine</a>
+                    </div>
+                    <div class="col-6">
+                      <div class="summ delivery_summ">4$</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="row">
+                    <div class="col-6">
+                      <h5>Total cost</h5>
+                    </div>
+                    <div class="col-6">
+                      <div class="summ_all">53$</div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="secure_checkout">Secure checkout</button>
+              </div>
+            </div>
+            <!-- End Шаг 1           -->
+            <div class="order-item next">
+              <!-- Шаг 2             -->
+              <div id="shipping_details" class="form-text active">
+                <h3>Shipping Details
+                  <a href="#" data-id="shipping_details" class="edit-btn">Edit</a>
+                </h3>
+                <div class="item">
+                  <span>
+                    <label for="name">name</label>
+                    <input type="text" name="name" required id="name">
+                  </span>
+                  <span>
+                    <label for="Phone">Phone</label>
+                    <input type="tel" name="phone" required id="Phone" >
+                  </span>
+                  <span>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" required id="email" data-inputmask="'alias': 'email'" >
+                  </span>
+                  <span>
+                    <label for="Сountry">Сountry</label>
+                    <input type="Сountry" name="Сountry" required id="Сountry">
+                  </span>
+                  <span>
+                    <label for="Сity">Сity</label>
+                    <input type="Сity" name="Сity" required id="city">
+                    
+                    <label for="zip">Zip</label>
+                    <input type="Zip" name="Zip" required id="zip">
+                  </span>
+                  <span>
+                    <label for="Adress">Adress</label>
+                    <input type="Adress" name="Adress" required id="Adress">
+                  </span>
+                  <button data-id="delivery_method" type="button" class="form-next">Continue</button>
+                </div>
+                <div class="item-preview">
+                  <span class="name"></span><br>
+                  <span class="phone"></span>,
+                  <span class="email"></span><br>
+                  <span class="Сountry"></span>,
+                  <span class="Сity"></span>,
+                  <span class="Zip"></span><br>
+                  <span class="Adress"></span>
+                </div>
+              </div>
+              <!-- End Шаг 2             -->
+              <!-- Шаг 3             -->
+              <div id="delivery_method" class="form-text">
+                <h3>Delivery Method
+                  <a href="#" data-id="delivery_method" class="edit-btn">Edit</a>
+                </h3>
+
+                <div class="item item-preview">
+                  <input type="checkbox" id="checkbox">
+                  <label class="checkbox" for="checkbox">Standard shipping <br><span class="checkbox-bottom">10-14</span> <span class="price-checkbox">4$</span></label>
+                  <button data-id="payment" type="button" class="form-next">Continue</button>
+                </div>
+              </div>
+              <!-- End Шаг 3             -->
+              <!-- Шаг 4            -->
+              <div id="payment" class="form-text">
+                <h3>Payment</h3>
+                <div class="item">
+                  <div class="pay">
+                    <input name="pay_cart" type="radio" id="pay_1" checked>
+                    <label for="pay_1" class="pay-cart">Credit / Debit Card <img src="images/paypal-784404-960-720.png" alt=""></label>
+                    <input name="pay_cart" type="radio" id="pay_2">
+                    <label for="pay_2" class="pay-cart">Credit / Debit Card <img src="images/credit-card-6.png" alt=""></label>
+                  </div>
+                  <div class="pay-info">
+                    <h4>Credit / Debit Card Details</h4>
+                    <span>
+                      <label for="card_number">Card number</label>
+                      <input type="text" name="card_number" id="card_number" placeholder="XXXX XXXX XXXX XXXX" required>
+                   </span>
+                    <span>
+                     <span>
+                        <label for="expiration_date">Expiration Date</label>
+                      <input type="text" name="expiration_date" id="expiration_date" placeholder="MM/YY" required>
+                     </span>
+
+                    <span>
+                        <label for="CVV">CVV<sup title="????">?</sup></label>
+                      <input type="text" name="CVV" id="CVV" placeholder="XXX" required>
+                      </span>
+                    </span>
+                    <span>
+                      <label for="card_holder_name">Card Holder Name</label>
+                      <input type="text" name="card_holder_name" id="card_holder_name" placeholder="" required>
+                   </span>
+                    <div class="pay-info">
+                      <h4>Billing Address</h4>
+                      <input type="checkbox" id="billing_address">
+                      <label for="billing_address" class="billing_address-checkbox">Same as Shipping Address</label>
+                    </div>
+                  </div>
+                  <button type="submit" class="submit-btn">Continue</button>
+                </div>
+              </div>
+              <!-- End Шаг 4             -->
+              <div id="place_order" class="form-text">
+                <h3>Review & Place Order</h3>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="overlay"></div>
+
+  <div class="modal large" id="modal_1">
+    <div class="popup__close"></div>
+    <div class="modal-content">
+      <select name="country">
+        <option value="Ukraine">Ukraine</option>
+        <option value="En">En</option>
+        <option value="RU">RU</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

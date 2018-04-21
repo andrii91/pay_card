@@ -1,0 +1,38 @@
+& {
+  .checkout {
+    overflow: hidden;
+  }
+  .checkout-galery {
+    position: static;
+    transform: none;
+    min-width: inherit;
+  }
+  #thumbs {
+    margin-left: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 65px;
+      height: 65px;
+      margin-left: 0;
+      background-color: #e8e8e8;
+      line-height: 5;
+      text-align: center;
+    }
+  }
+  .form-text.active .item span input#city, .form-text.active .item span input#zip {
+    max-width: 300px;
+  }
+  .form-text.active .item span label[for=zip] {
+    margin: 0 15px 0 0;
+  }
+  .allert {
+    top: inherit;
+    bottom: 5px;
+    transform: none;
+  }
+  .form-text.active .item .pay-info span span #CVV, .form-text.active .item .pay-info span span #expiration_date,.form-text.active .item .pay-info span input {
+    max-width: 100%;
+    margin-right: 12px;
+  }
+}

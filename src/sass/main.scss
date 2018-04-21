@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic');
+::-webkit-scrollbar{
+  width:10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb{
+  border-width: 1px 1px 1px 2px;
+  border-color: #fff;
+  background-color: #f36d21;
+}
+::-webkit-scrollbar-thumb:hover{
+  border-width: 1px 1px 1px 2px;
+  border-color: #fff;
+  background-color: #f36d21;
+}
+::-webkit-scrollbar-track{
+  border-width: 1px;
+  background-color: #eee;
+  border-color: #fff;
+}
+::-webkit-scrollbar-track:hover{
+  border: solid 1px #f36d21;
+  border-color: #fff;
+}
+
+
+.allert svg {
+   width: 15px;
+}
+
+.allert p {
+   display: none;
+   opacity: 0;
+   padding: 5px;
+   margin-left: 5px;
+   line-height: 14px;
+   color: #000;
+   font-style: italic;
+   font-size: 13px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+   -webkit-transition: all 0.5s;
+   transition: all 0.5s;
+   min-width: 140px;
+   text-align: center;
+}
+
+.allert:hover p {
+   border: 1px solid #ff6565;
+   background: #fff;
+   display: inline;
+   position: absolute;
+   color: #4e4e4e;
+   right: 24px;
+   top: -7px;
+   opacity: 1
+}
+
+.field {
+   position: relative;
+  display: block;
+}
+
+.allert {
+   position: absolute;
+   z-index: 20;
+   top: 50%;
+   display: block;
+   right: 5px;
+   height: 20px;
+   width: 20px;
+   color: #ff6565;
+   cursor: default;
+   transform: translateY(-50%);
+}
+
+
+.modal {
+  position: fixed;
+  z-index: 1050;
+  display: none;
+  outline: 0;
+  opacity: 0;
+  background-color: #fff;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transition: all 400ms;
+  padding: 69px 67px;
+  width: 70%;
+  max-width: 490px;
+  min-width: 300px;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%);
+  &.large {
+    max-width: 768px;
+    overflow-y: scroll;
+    max-height: 480px;
+  }
+}
+
+.modal-content {
+  text-align: center;
+  h4 {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 0 30px 0;
+    color: #28292d;
+    font-family: "Gilroy - Extra Bold";
+  }
+  h3 {
+    color: #28292d;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+
+.overl-h {
+  overflow: hidden
+}
+
+
+.modal-btn {
+  cursor: pointer
+}
+
+.popup__close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+  background: url('../images/close-icon.svg') no-repeat;
+  opacity: 0.5;
+  background-size: 100%;
+}
+
+.popup__close:hover {
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background: #000;
+  opacity: .62;
+  z-index: 1000
+}
+
+@import 'info/bootstrap';
+@import 'info/main';
