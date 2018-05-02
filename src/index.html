@@ -69,7 +69,15 @@
                         <h5>Delivery price</h5>
                       </div>
                       <div class="col-6">
-                        <div class="summ">4$</div>
+                        <div class="summ delivery_summ">4$</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <h5>Delivery time</h5>
+                      </div>
+                      <div class="col-6">
+                        <div class="days"><span>__</span> days</div>
                       </div>
                     </div>
                   </div>
@@ -121,6 +129,14 @@
                       <div class="summ delivery_summ">4$</div>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <h5>Delivery time</h5>
+                    </div>
+                    <div class="col-6">
+                      <div class="days"><span>__</span> days</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="product-item">
                   <div class="row">
@@ -157,7 +173,11 @@
                   </span>
                   <span>
                     <label for="Сountry">Сountry</label>
-                    <input type="Сountry" name="Сountry" required id="Сountry">
+                    <select name="country" required>
+                      <option value="Ukraine" data-price="4">Ukraine</option>
+                      <option value="En" data-price="6">En</option>
+                      <option value="RU" data-price="8">RU</option>
+                    </select>
                   </span>
                   <span>
                     <label for="Сity">Сity</label>
@@ -252,9 +272,9 @@
     <div class="popup__close"></div>
     <div class="modal-content">
       <select name="country">
-        <option value="Ukraine">Ukraine</option>
-        <option value="En">En</option>
-        <option value="RU">RU</option>
+        <option value="Ukraine" data-price="4">Ukraine</option>
+        <option value="En" data-price="6">En</option>
+        <option value="RU" data-price="8">RU</option>
       </select>
     </div>
   </div>

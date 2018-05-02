@@ -492,7 +492,7 @@ body {
             margin: 0 15px;
           }
         }
-        input {
+        input, select {
           display: inline-block;
           max-width: 300px;
           width: 100%;
@@ -513,6 +513,9 @@ body {
           &#zip {
             max-width: 93px;
           }
+        }
+        select {
+          line-height: 1;
         }
       }
     }
@@ -805,3 +808,12 @@ select {
     float: right;
     margin-top: 21px;
 }
+
+ .days, .country {
+      color: #333333;
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: right;
+    }
