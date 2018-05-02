@@ -77,7 +77,7 @@
                         <h5>Delivery time</h5>
                       </div>
                       <div class="col-6">
-                        <div class="days"><span>__</span> days</div>
+                        <div class="days"><span class="days-count">__</span> days</div>
                       </div>
                     </div>
                   </div>
@@ -134,7 +134,7 @@
                       <h5>Delivery time</h5>
                     </div>
                     <div class="col-6">
-                      <div class="days"><span>__</span> days</div>
+                      <div class="days"><span class="days-count">1-2</span> days</div>
                     </div>
                   </div>
                 </div>
@@ -173,10 +173,10 @@
                   </span>
                   <span>
                     <label for="Сountry">Сountry</label>
-                    <select name="country" required>
-                      <option value="Ukraine" data-price="4">Ukraine</option>
-                      <option value="En" data-price="6">En</option>
-                      <option value="RU" data-price="8">RU</option>
+                    <select class="choise" name="country" required>
+                      <option value="Ukraine" data-price="4" data-day="1-2">Ukraine</option>
+                      <option value="En" data-price="6" data-day="3-4">En</option>
+                      <option value="RU" data-price="8" data-day="4-6">RU</option>
                     </select>
                   </span>
                   <span>
@@ -211,7 +211,7 @@
 
                 <div class="item item-preview">
                   <input type="checkbox" id="checkbox">
-                  <label class="checkbox" for="checkbox">Standard shipping <br><span class="checkbox-bottom">10-14</span> <span class="price-checkbox">4$</span></label>
+                  <label class="checkbox" for="checkbox">Standard shipping <br><span class="checkbox-bottom days-count">10-14</span> <span class="price-checkbox delivery_summ">4$</span></label>
                   <button data-id="payment" type="button" class="form-next">Continue</button>
                 </div>
               </div>
@@ -251,6 +251,39 @@
                       <h4>Billing Address</h4>
                       <input type="checkbox" id="billing_address">
                       <label for="billing_address" class="billing_address-checkbox">Same as Shipping Address</label>
+                      <div class="pay-address">
+                        <span>
+                    <label for="name_address">name</label>
+                    <input type="text" name="name_address" required id="name_address">
+                  </span>
+                        <span>
+                    <label for="Phone_address">Phone</label>
+                    <input type="tel" name="phone_address" required id="Phone_address" >
+                  </span>
+                        <span>
+                    <label for="email_address">E-mail</label>
+                    <input type="email" name="email_address" required id="email_address" data-inputmask="'alias': 'email'" >
+                  </span>
+                        <span>
+                    <label for="Сountry_address">Сountry</label>
+                    <select name="country_address" id="Сountry_address" required>
+                      <option value="Ukraine" data-price="4" data-day="1-2">Ukraine</option>
+                      <option value="En" data-price="6" data-day="3-4">En</option>
+                      <option value="RU" data-price="8" data-day="4-6">RU</option>
+                    </select>
+                  </span>
+                        <span>
+                    <label for="Сity_address">Сity</label>
+                    <input type="Сity" name="Сity_address" required id="city_address">
+                    
+                    <label for="zip_address">Zip</label>
+                    <input type="Zip" name="Zip_address" required id="zip_address">
+                  </span>
+                        <span>
+                    <label for="Adress">Adress</label>
+                    <input type="Adress" name="Adress_address" required id="Adress">
+                  </span>
+                      </div>
                     </div>
                   </div>
                   <button type="submit" class="submit-btn">Continue</button>
@@ -271,10 +304,10 @@
   <div class="modal large" id="modal_1">
     <div class="popup__close"></div>
     <div class="modal-content">
-      <select name="country">
-        <option value="Ukraine" data-price="4">Ukraine</option>
-        <option value="En" data-price="6">En</option>
-        <option value="RU" data-price="8">RU</option>
+      <select class="choise" name="country">
+        <option value="Ukraine" data-price="4" data-day="1-2">Ukraine</option>
+        <option value="En" data-price="6" data-day="2-4">En</option>
+        <option value="RU" data-price="8" data-day="3-6">RU</option>
       </select>
     </div>
   </div>

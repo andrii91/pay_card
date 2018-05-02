@@ -21,7 +21,7 @@
     }
   }
   .form-text.active .item span input#city, .form-text.active .item span input#zip {
-    max-width: 300px;
+    max-width: 100%;
   }
   .form-text.active .item span label[for=zip] {
     margin: 0 15px 0 0;
@@ -31,8 +31,9 @@
     bottom: 5px;
     transform: none;
   }
-  .form-text.active .item .pay-info span span #CVV, .form-text.active .item .pay-info span span #expiration_date,.form-text.active .item .pay-info span input {
+  .form-text.active .item .pay-info span span #CVV, .form-text.active .item .pay-info span span #expiration_date,.form-text.active .item .pay-info span input, .form-text.active .item .pay-info .pay-address span input, .form-text.active .item .pay-info .pay-address span select, .form-text.active .item span input, .form-text.active .item span select {
     max-width: 100%;
     margin-right: 12px;
   }
+  
 }

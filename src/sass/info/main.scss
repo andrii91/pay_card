@@ -137,7 +137,7 @@ body {
   color: #7b879f;
   font-family: Ubuntu;
   font-size: 1.7vh;
-//  font-size: 16px;
+  //  font-size: 16px;
   font-weight: 300;
   line-height: 1;
   line-height: 24px;
@@ -145,7 +145,7 @@ body {
   z-index: 4156;
   margin-top: 6.8vh;
   max-width: 458px;
-//  margin-left: 60px;
+  //  margin-left: 60px;
   p {
     margin-bottom: 1.7777777777777777vh;
   }
@@ -266,8 +266,7 @@ body {
         position: absolute;
         bottom: 0;
         left: -57px;
-      }
-      //      border-top: 1px solid rgba(146,163,198,0.3);
+      } //      border-top: 1px solid rgba(146,163,198,0.3);
       //      border-bottom: 1px solid rgba(146,163,198,0.3);
     }
     .summ_all {
@@ -283,7 +282,8 @@ body {
 }
 
 .secure_checkout,
-.form-next, .submit-btn {
+.form-next,
+.submit-btn {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   background-color: #ffffff;
@@ -441,7 +441,7 @@ body {
       font-size: 16px;
       font-weight: 300;
       line-height: 30px;
-      
+
     }
     .item {
       display: none;
@@ -492,7 +492,8 @@ body {
             margin: 0 15px;
           }
         }
-        input, select {
+        input,
+        select {
           display: inline-block;
           max-width: 300px;
           width: 100%;
@@ -518,6 +519,27 @@ body {
           line-height: 1;
         }
       }
+       .pay-info {
+      .pay-address {
+        span {
+          input,
+          select {
+            background-color: #fff;
+                max-width: 280px;
+          }
+          input#city {
+            max-width: 125px;
+          }
+          label {
+            width: 70px !important;
+            &[for="zip"] {
+              width: inherit  !important;
+            }
+          }
+        }
+      }
+
+    }
     }
 
 
@@ -543,6 +565,7 @@ body {
     display: none;
   }
   .item {
+   
     #checkbox {
       display: none;
       &:checked {
@@ -605,7 +628,8 @@ body {
   &#delivery_method.close-item {
     .item-preview.item {
       .checkbox {
-        &:before,&:after {
+        &:before,
+        &:after {
           display: none;
         }
         padding-left: 0;
@@ -617,7 +641,8 @@ body {
         br {
           display: none;
         }
-        .checkbox-bottom, .price-checkbox {
+        .checkbox-bottom,
+        .price-checkbox {
           color: #7a869e;
           font-family: Ubuntu;
           font-size: 16px;
@@ -628,15 +653,16 @@ body {
         }
         .checkbox-bottom {
           &:before {
-           content:  '(';
+            content: '(';
           }
           &:after {
-            content:  ')';
+            content: ')';
           }
         }
       }
     }
   }
+
 
 }
 
@@ -646,23 +672,24 @@ body {
   float: right;
   margin-top: 21px;
 }
+
 .pay {
   margin-bottom: 55px;
   input[type="radio"] {
     display: none;
     &:checked {
-      +label {
+      + label {
         &:after {
-      content: "";
-      width: 12px;
-      height: 12px;
-      background-color: #92a3c6;
-      border-radius: 50%;
-      position: absolute;
-    top: 9px;
-    left: 5px;
-      
-    }
+          content: "";
+          width: 12px;
+          height: 12px;
+          background-color: #92a3c6;
+          border-radius: 50%;
+          position: absolute;
+          top: 9px;
+          left: 5px;
+
+        }
       }
     }
   }
@@ -686,26 +713,27 @@ body {
       position: absolute;
       top: 4px;
       left: 0;
-      
+
     }
-    
+
     img {
       float: right;
     }
   }
 }
-.form-text.active .item .pay-info span  {
+
+.form-text.active .item .pay-info span {
   label {
-  width: 135px;
-  color: #7b879f;
-  font-family: Ubuntu;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 36px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 0;
-}
+    width: 135px;
+    color: #7b879f;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
   input {
     max-width: 230px;
     padding-left: 14px;
@@ -713,15 +741,16 @@ body {
   span {
     display: inline-block;
     margin: 0;
-    #expiration_date, #CVV {
+    #expiration_date,
+    #CVV {
       max-width: 83px;
     }
     label[for="CVV"] {
-     max-width: 55px; 
+      max-width: 55px;
       text-align: center;
       margin-right: 0;
     }
-    
+
   }
 
 }
@@ -738,16 +767,16 @@ body {
   &:last-child {
     margin-top: 35px;
   }
-    #billing_address {
+  #billing_address {
     display: none;
     &:checked {
       + label {
-         &:after {
+        &:after {
           content: "";
           width: 10px;
           height: 10px;
           border: 1px solid #92a3c6;
-           background: #92a3c6;
+          background: #92a3c6;
           opacity: 0.3;
           position: absolute;
           top: 12px;
@@ -755,9 +784,13 @@ body {
         }
 
       }
+      ~ .pay-address {
+        display: none;
+      }
     }
-    
+
   }
+
   .billing_address-checkbox {
     padding-left: 39px;
     position: relative;
@@ -780,40 +813,41 @@ body {
 }
 
 select {
-    width: 100%;
-    height: 50px;
-    padding: 0 20px;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none!important;
-    -moz-appearance: none; 
-    background-color: transparent;
-    background-image: url('../images/arrow-down-01-512.png');
-    background-repeat: no-repeat;
-    background-position: 98% center;
-    background-size: 20px;
-    color: #7b879f;
-    font-family: Ubuntu;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    border: 1px solid rgba(123,135,159,.3);
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+  -moz-appearance: none;
+  background-color: transparent;
+  background-image: url('../images/arrow-down-01-512.png');
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: 20px;
+  color: #7b879f;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid rgba(123, 135, 159, .3);
 }
 
 
 
 .submit-btn {
-      padding-left: 50px;
-    padding-right: 50px;
-    float: right;
-    margin-top: 21px;
+  padding-left: 50px;
+  padding-right: 50px;
+  float: right;
+  margin-top: 21px;
 }
 
- .days, .country {
-      color: #333333;
-      font-family: Ubuntu;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 36px;
-      text-align: right;
-    }
+.days,
+.country {
+  color: #333333;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: right;
+}

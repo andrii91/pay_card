@@ -151,9 +151,22 @@ $(document).ready(function () {
     }, 400);
   });
   
-  $('select').change(function(){
+  
+  $('.billing_address-checkbox').click(function(){
+    if($('#billing_address').prop('checked')){
+      $(this).parent().find('.pay-address input').attr('required', 'required');
+    }else{
+      $(this).parent().find('.pay-address input').removeAttr('required');
+    }
+    
+    
+    
+  })
+  
+  $('select.choise').change(function(){
     $('.'+$(this).attr('name')).text($(this).val());
     $('.delivery_summ').text('$'+$(this).find('option[value="'+$(this).val()+'"]').data('price'));
+    $('.days-count').text($(this).find('option[value="'+$(this).val()+'"]').data('day'));
     
     $('select option[value="'+$(this).val()+'"]').attr('selected', 'selected');
     
